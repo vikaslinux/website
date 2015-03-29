@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>
+signup</title>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+<script src="signup.js"></script>
+</head>
+<body>
+ <div id="container">
+<form name="myform" method="post" action="sign.html" onsubmit="return checkform(this);">
+<h2>Sign Up</h2>
+
+<input type="text" onfocus="this.select()" onclick="if(this.value==''){this.value='First Name'; this.type='text'}"name="fname" value="First Name" size="21" required>
+
+<input type="text" onfocus="this.select()" onclick="if(this.value==''){this.value='Last Name'; this.type='text'}" name="lname" value="Last Name"size="21" required >   <br>
+
+<input type="email" onfocus="this.select()" onclick="if(this.value==''){this.value='Email'; this.type='email'}" name="email" value="Email" size="51" required><br>
+
+<input type="text"  onfocus="this.select()" onclick="if(this.value==''){this.value='Password'; this.select();this.type='text'}"
+   onkeypress="{this.type='password'}"
+  name="pwd" value="Password" size="51" required> <br>
+
+<input type="text" onfocus="this.select()" onclick="if(this.value==''){this.value='Confirm Password'; this.select();this.type='text'}"
+ onkeypress="{this.type='password'}"
+  name="cpwd" value="Confirm Password" size="51" required><br> 
+
+<b class="bd">Birthday</b><br>
+<input type="date" name="bday" required><br>
+
+<input type="radio" name="gender" value="Male" checked>Male
+<input type="radio" name="gender" value="Female">Female<br>
+
+            <div id="lower">
+ <input type="checkbox" name="checkbox" checked ><label class="check">I accept term and conditions</label>
+                <input type="submit" value="Sign Up" required>
+</div>
+</form>
+</div>
+</body>
+</html>
